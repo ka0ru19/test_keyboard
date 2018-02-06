@@ -12,7 +12,35 @@
 		63052E7B1FDBA5D3004E7192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63052E791FDBA5D3004E7192 /* Main.storyboard */; };
 		63052E7D1FDBA5D3004E7192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63052E7C1FDBA5D3004E7192 /* Assets.xcassets */; };
 		63052E801FDBA5D3004E7192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63052E7E1FDBA5D3004E7192 /* LaunchScreen.storyboard */; };
+		63052E8E1FDBA619004E7192 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63052E8D1FDBA619004E7192 /* KeyboardViewController.swift */; };
+		63052E921FDBA619004E7192 /* Clipboard01.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63052E8B1FDBA619004E7192 /* Clipboard01.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6307E9F1201B4A7200BB9807 /* hoge.png in Resources */ = {isa = PBXBuildFile; fileRef = 6307E9F0201B4A7200BB9807 /* hoge.png */; };
+		635171D01FDBD5D70058CA49 /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635171CF1FDBD5D70058CA49 /* CustomKeyboard.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63052E901FDBA619004E7192 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63052E6A1FDBA5D3004E7192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63052E8A1FDBA619004E7192;
+			remoteInfo = Clipboard01;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63052E961FDBA619004E7192 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63052E921FDBA619004E7192 /* Clipboard01.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		63052E721FDBA5D3004E7192 /* KeyboardTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,22 @@
 		63052E7C1FDBA5D3004E7192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63052E7F1FDBA5D3004E7192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63052E811FDBA5D3004E7192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63052E8B1FDBA619004E7192 /* Clipboard01.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Clipboard01.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		63052E8D1FDBA619004E7192 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		63052E8F1FDBA619004E7192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6307E9F0201B4A7200BB9807 /* hoge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hoge.png; sourceTree = "<group>"; };
+		635171CF1FDBD5D70058CA49 /* CustomKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		63052E6F1FDBA5D3004E7192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63052E881FDBA619004E7192 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				63052E741FDBA5D3004E7192 /* KeyboardTest */,
+				63052E8C1FDBA619004E7192 /* Clipboard01 */,
 				63052E731FDBA5D3004E7192 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				63052E721FDBA5D3004E7192 /* KeyboardTest.app */,
+				63052E8B1FDBA619004E7192 /* Clipboard01.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				63052E751FDBA5D3004E7192 /* AppDelegate.swift */,
+				6307E9F0201B4A7200BB9807 /* hoge.png */,
 				63052E771FDBA5D3004E7192 /* ViewController.swift */,
 				63052E791FDBA5D3004E7192 /* Main.storyboard */,
 				63052E7C1FDBA5D3004E7192 /* Assets.xcassets */,
@@ -62,6 +105,16 @@
 				63052E811FDBA5D3004E7192 /* Info.plist */,
 			);
 			path = KeyboardTest;
+			sourceTree = "<group>";
+		};
+		63052E8C1FDBA619004E7192 /* Clipboard01 */ = {
+			isa = PBXGroup;
+			children = (
+				63052E8D1FDBA619004E7192 /* KeyboardViewController.swift */,
+				635171CF1FDBD5D70058CA49 /* CustomKeyboard.xib */,
+				63052E8F1FDBA619004E7192 /* Info.plist */,
+			);
+			path = Clipboard01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +127,34 @@
 				63052E6E1FDBA5D3004E7192 /* Sources */,
 				63052E6F1FDBA5D3004E7192 /* Frameworks */,
 				63052E701FDBA5D3004E7192 /* Resources */,
+				63052E961FDBA619004E7192 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				63052E911FDBA619004E7192 /* PBXTargetDependency */,
 			);
 			name = KeyboardTest;
 			productName = KeyboardTest;
 			productReference = 63052E721FDBA5D3004E7192 /* KeyboardTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		63052E8A1FDBA619004E7192 /* Clipboard01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63052E931FDBA619004E7192 /* Build configuration list for PBXNativeTarget "Clipboard01" */;
+			buildPhases = (
+				63052E871FDBA619004E7192 /* Sources */,
+				63052E881FDBA619004E7192 /* Frameworks */,
+				63052E891FDBA619004E7192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clipboard01;
+			productName = Clipboard01;
+			productReference = 63052E8B1FDBA619004E7192 /* Clipboard01.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +167,10 @@
 				ORGANIZATIONNAME = "Wataru Inoue";
 				TargetAttributes = {
 					63052E711FDBA5D3004E7192 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					63052E8A1FDBA619004E7192 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +190,7 @@
 			projectRoot = "";
 			targets = (
 				63052E711FDBA5D3004E7192 /* KeyboardTest */,
+				63052E8A1FDBA619004E7192 /* Clipboard01 */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +202,16 @@
 			files = (
 				63052E801FDBA5D3004E7192 /* LaunchScreen.storyboard in Resources */,
 				63052E7D1FDBA5D3004E7192 /* Assets.xcassets in Resources */,
+				6307E9F1201B4A7200BB9807 /* hoge.png in Resources */,
 				63052E7B1FDBA5D3004E7192 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63052E891FDBA619004E7192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635171D01FDBD5D70058CA49 /* CustomKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +227,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63052E871FDBA619004E7192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63052E8E1FDBA619004E7192 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63052E911FDBA619004E7192 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63052E8A1FDBA619004E7192 /* Clipboard01 */;
+			targetProxy = 63052E901FDBA619004E7192 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		63052E791FDBA5D3004E7192 /* Main.storyboard */ = {
@@ -273,6 +375,7 @@
 		63052E851FDBA5D3004E7192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44KX7M22LP;
@@ -288,6 +391,7 @@
 		63052E861FDBA5D3004E7192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44KX7M22LP;
@@ -295,6 +399,36 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wataru.KeyboardTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63052E941FDBA619004E7192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44KX7M22LP;
+				INFOPLIST_FILE = Clipboard01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wataru.KeyboardTest.Clipboard01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63052E951FDBA619004E7192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44KX7M22LP;
+				INFOPLIST_FILE = Clipboard01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wataru.KeyboardTest.Clipboard01;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +451,15 @@
 			buildConfigurations = (
 				63052E851FDBA5D3004E7192 /* Debug */,
 				63052E861FDBA5D3004E7192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63052E931FDBA619004E7192 /* Build configuration list for PBXNativeTarget "Clipboard01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63052E941FDBA619004E7192 /* Debug */,
+				63052E951FDBA619004E7192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
